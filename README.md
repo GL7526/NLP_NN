@@ -1,3 +1,3 @@
 # NLP_NN
 
-# ** Files to be uploaded soon **
+# ** Readme to be updated soon **
