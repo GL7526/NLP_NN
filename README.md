@@ -12,18 +12,17 @@ This project was an opportunity to delve into natural language processing by bui
 <br>
 
 - [Project Goal](#ProjGoal)
-- [Number of Good Tips](#NumberGood)
+- [Cleaning Data](#Preprocessing)
 - [The Model](#BestModel)
 - [Takeaways](#Takeaway)
 
 <br>
 
 ## Project Goal <a name = 'ProjGoal'></a>
-This project was 
-<br>
+The goal of this project is to predict the rating of a drug review based on the text.
 <br>
 
-## How Many Tips Are Good Tips? <a name = 'NumberGood'></a>
+## Preprocessing/Data Cleaning <a name = 'Preprocessing'></a>
 
 <center><img src='graphs/dist_of_good_bad_tips.png' width = 550></center>
 One important piece of information is the number of tips that are considered "good" in the data. The bar graph above shows us that there are fewer tips that are good than not. Although there isn't much class imbalance, upsampling was used so that the models would not be biased to choose the majority class (not good tip) more often than it should.
