@@ -13,7 +13,8 @@ This project was an opportunity to delve into natural language processing by bui
 
 - [Project Goal](#ProjGoal)
 - [Cleaning Data](#Preprocessing)
-- [The Model](#BestModel)
+- [EDA](#EDA)
+- [The Model](#Model)
 - [Takeaways](#Takeaway)
 
 <br>
@@ -23,21 +24,20 @@ The goal of this project is to predict the rating of a drug review based on the 
 <br>
 
 ## Preprocessing/Data Cleaning <a name = 'Preprocessing'></a>
+Cleaning text data is slightly different from cleaning typical numerical data. The inputs are strings that we want to extract information from. For this set of data, I used nltk's TweetTokenizer to tokenize the data. The benefit of using TweetTokenizer as opposed to nltk's word_tokenize is that the former doesn't split words by apostrophes so a word like "didn't" stays as "didn't" instead of becoming two words "did" and "n't". Now that the data is tokenized, the stop words and punctuation can then be removed. The words were then lemmatized according to their parts of speech to reduce dimensionality and also because I saw no loss of meaning from considering words like "jump" and "jumping" the same, at least here. Finally, I used keras' Tokenizer to transform the data into a matrix of tf-idf values of each word.
 
-<center><img src='graphs/dist_of_good_bad_tips.png' width = 550></center>
-One important piece of information is the number of tips that are considered "good" in the data. The bar graph above shows us that there are fewer tips that are good than not. Although there isn't much class imbalance, upsampling was used so that the models would not be biased to choose the majority class (not good tip) more often than it should.
 <br>
 <br>
 
-## The Best Performing Model <a name = 'BestModel'></a>
-The models that were run were logistic regressions with L1 and then L2 regularization, and a random forest model. Out of these models, the model that performed the best was the random forest model with a test accuracy of 0.953 and an f1 score of 0.945. This meant that the model was able to predict whether or not the trip would have a good tip fairly well.
+## EDA <a name = 'EDA'></a>
+Some interesting findings come from the EDA. One of the 
+
+
+## The Model <a name = 'Model'></a>
+
+
 <br>
 <br>
-The random forest model can also tell us which features would give us the most information. This is done by determining which features were used the most in the decision trees when splitting the data. A graph displaying feature importance can be seen below:
-<br>
-<img src = "graphs/feature%20importance%20chart.PNG" width = 550>
-<br>
-We see that features such as the trip's total cost, duration, and distance are important features. However, what this doesn't tell us how these features are important. Does a longer or shorter trip usually result in a good tip? Do yellow taxi drivers usually get a good tip when the total cost of the ride is higher or lower? In order to answer this, we need to look back at the data.
 
 ## Distribution Of Features To Amount Of Good Tips
 The feature that provides the most information is the trip's total cost. Below shows a scatterplot of the total price categorized by whether the tip was good or not:
