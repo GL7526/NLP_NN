@@ -29,7 +29,7 @@ Cleaning text data is slightly different from cleaning typical numerical data. T
 <br>
 ## Exploratory Data Analysis <a name = 'EDA'></a>
 It's important to look at the data to get a good understanding of it for any dataset, and this is no different. One piece of information that might be interesting is what are the conditions whose drugs have the best and worst rating? To find this out, I calculated the average of the ratings for each condition that occurred at least 500 times, so that the drugs can be fairly represented and so that drugs with only one 1/10 review don't skew the numbers improperly by dropping that drug to the bottom. By doing this, I created the following charts:
-<br>
+<br> <br>
 <img src = "images/Cond_Best_Rate.png" width = 500></img>
 ##
 <br>
