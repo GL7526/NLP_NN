@@ -1,6 +1,5 @@
-# NLP_NN
 
-# ** Readme to be updated soon **
+# ** Readme in progress - to be updated soon **
 
 
 # Predicting Drug Ratings Based On Reviews
