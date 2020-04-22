@@ -66,12 +66,7 @@ We can see that the words, when taken individually, are almost the same. Even th
 
 ## The Model <a name = 'Model'></a>
 The model is a neural network that accepts an input vector of length 5000, corresponding to a string after undergoing the same preprocessing as the training data. The output is a vector that whose values are the probability of being each class, which are the ratings 1-10.
-
 <br>
 <br>
-
-
-
-
 ## Potential Improvements <a name = "Improvements"></a>
 Although this project focused on using NLP techniques, we can always incorporate the rest of the information provided in the dataset to improve the model, such as creating dummy variables for each condition. We can also use Word2Vec, which uses continuous bag of words or skip-grams, which better maintains the context of the words.
