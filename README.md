@@ -43,12 +43,12 @@ From this, we can see that drugs for conditions related to the urinary tract are
 <br>
 <br>
 One other very important piece of information is the distribution of the classes that are going to be predicted. From the chart below, we can see that most of the ratings are concentrated at the far ends of being 1/10 or 10/10. This may tell us that looking at the extremes is a good representation of the overall data:
-<p align = "center">
-<img src = "images/Distr_Ratings.png" width = 500></img>
-</p>
 <br>
 
+<p align = "center"><img src = "images/Distr_Ratings.png" width = 500></img></p>
+
 ##
+
 By looking at the words used in a 1/10 review: 
 <br>
 <p align = "center">
