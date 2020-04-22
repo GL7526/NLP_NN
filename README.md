@@ -37,7 +37,9 @@ It's important to look at the data to get a good understanding of it for any dat
 <br>
 From this, we can see that drugs for conditions related to the urinary tract are generally bad.
 <br>
+
 One other very important piece of information is the distribution of the classes that are going to be predicted. From the chart below, we can see that most of the ratings are concentrated at the far ends of being 1/10 or 10/10. This may tell us that looking at the extremes is a good representation of the overall data:
+
 <img src = "images/Distr_Ratings.png" width = 500></img>
 <br>
 
