@@ -30,27 +30,36 @@ Cleaning text data is slightly different from cleaning typical numerical data. T
 ## Exploratory Data Analysis <a name = 'EDA'></a>
 It's important to look at the data to get a good understanding of it for any dataset, and this is no different. One piece of information that might be interesting is what are the conditions whose drugs have the best and worst rating? To find this out, I calculated the average of the ratings for each condition that occurred at least 500 times, so that the drugs can be fairly represented and so that drugs with only one 1/10 review don't skew the numbers improperly by dropping that drug to the bottom. By doing this, I created the following charts:
 <br> <br>
+
 <img src = "images/Cond_Best_Rate.png" width = 500></img>
+
 ##
 <br>
+
 <img src = "images/Cond_Worst_Rate.png" width = 500></img>
+
 <br>
 From this, we can see that drugs for conditions related to the urinary tract are generally bad.
 <br>
 <br>
 One other very important piece of information is the distribution of the classes that are going to be predicted. From the chart below, we can see that most of the ratings are concentrated at the far ends of being 1/10 or 10/10. This may tell us that looking at the extremes is a good representation of the overall data:
-
+<p align = "center">
 <img src = "images/Distr_Ratings.png" width = 500></img>
+</p>
 <br>
 
 ##
 By looking at the words used in a 1/10 review: 
 <br>
+<p align = "center">
 <img src = "images/wordcloud1.jpg" width = 350></img>
+</p>
 <br>
 and the words in a 10/10 review: 
 <br>
+<p align = "center">
 <img src = "images/wordcloud10.jpg" width = 350></img>
+</p>
 <br>
 We can see that the words, when taken individually, are almost the same. Even the proportions among the sizes of the words, which describe their frequency, is about the same. This tells us that there is barely any difference in the words used throughout the reviews.
 
