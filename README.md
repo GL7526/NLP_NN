@@ -1,5 +1,5 @@
 
-# ** Readme in progress - to be updated soon **
+# ** Readme to be updated soon **
 
 
 # Predicting Drug Ratings Based On Reviews
