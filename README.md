@@ -1,7 +1,4 @@
 
-# ** Readme to be updated **
-
-
 # Predicting Drug Ratings Based On Reviews
 This project aims to predict the rating of a review on a drug, based on the text in the review.
 The data comes from online pharmaceutical review sites and contains information such as the review and rating of the drug, and condition it was used for. The data can be found in the following link: http://archive.ics.uci.edu/ml/datasets/Drug+Review+Dataset+%28Drugs.com%29
